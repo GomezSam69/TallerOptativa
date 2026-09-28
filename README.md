@@ -1,13 +1,11 @@
 # Eventos Tecnológicos
 
-**Nombre:** [Escribe aquí tu nombre completo]
+Samuel Perez Gomez 
 
 ## Descripción del proyecto
 
-Aplicación web desarrollada en React (con Vite) que presenta un listado de eventos
-tecnológicos disponibles para estudiantes de la Universidad Católica de Pereira.
-Permite ver el detalle de cada evento, inscribirse o cancelar la inscripción, y
-enviar un formulario de inscripción general.
+Aplicación web desarrollada en React (con Vite) que presenta un listado de eventos tecnológicos disponibles para estudiantes de la Universidad Católica de Pereira. Permite ver el detalle de cada evento, inscribirse o cancelar la inscripción, y enviar un formulario de inscripción general.
+Toda la información está almacenada dentro del proyecto (en un arreglo de eventos), por lo que no requiere base de datos ni conexión con una API.
 
 ## Componentes creados
 
@@ -34,14 +32,11 @@ enviar un formulario de inscripción general.
 
 ## ¿Qué fue lo más difícil del ejercicio?
 
-[Escribe aquí tu respuesta personal, por ejemplo: manejar el estado de cada tarjeta
-de forma independiente, o entender cómo pasar los eventos como props al formulario.]
+Lo más difícil fue entender cómo manejar el estado de cada tarjeta de forma independiente. Al principio no tenía claro por qué al hacer clic en "Inscribirme" en un evento no cambiaban los demás. Entendí que cada EventCard es una instancia distinta del componente y por eso cada una tiene su propio useState. También me costó un poco pasar el arreglo de eventos como props al formulario para generar las opciones del <select> con .map() en lugar de escribirlas a mano.
 
 ## ¿Qué diferencia identifica ahora entre HTML y React?
 
-[Escribe aquí tu respuesta personal, por ejemplo: en HTML el contenido es estático,
-mientras que en React el contenido se genera dinámicamente a partir de datos y
-puede cambiar en respuesta a la interacción del usuario gracias al estado.]
+En HTML el contenido es estático: si quiero seis tarjetas tengo que escribir seis veces el mismo bloque, y para cambiar algo al hacer clic necesito JavaScript aparte. En React el contenido se genera dinámicamente a partir de datos: escribo la tarjeta una sola vez como componente y la reutilizo con .map() para todos los eventos. Además, la interfaz cambia sola en respuesta a la interacción del usuario gracias al estado, sin tener que modificar el DOM manualmente.
 
 ## Cómo ejecutar el proyecto
 
